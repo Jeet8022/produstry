@@ -1,0 +1,127 @@
+/*
+Theme name: Produstry
+Virson: 1.0.1
+Author's name: Biswajit 2205
+Author URI: URL
+
+
+<<<<<<<<<<<Table Content>>>>>>>>>>>>>
+1. Home Page
+   # Header
+   # Nav
+   # Banner
+   # Service
+<<<<<=<<<<<<Table Content>>>>>>=>>>>>
+*/
+
+/*common css starts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6, span, ul, ol, p, a{
+    margin: 0;
+    padding: 0;
+} 
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primaryColor: #ffca36;
+    --secondaryColor:#353535;
+}
+/*common css ends*/
+
+/*Home Page Starts*/
+   /*Header Stats*/
+   header{
+    background-color: var(--primaryColor);
+    text-align: center;
+   }
+   header .address p{
+    font-size: 14px;
+    color: var(--secondaryColor);
+   }
+   header .welcome{
+    background-color: var(--secondaryColor);
+    padding: 16px 0;
+    font-size: 14px;
+    color: white;
+    clip-path: polygon(9% 0, 95% 0, 90% 100%, 3% 100%);
+   }
+   header .link ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+   }
+   header .link ul li a{
+    color: var(--secondaryColor);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    position: relative;
+   }
+   header .link ul li::after{
+    content: '';
+    width:100% ;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    position:absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.5s;
+   }
+   header .link ul li::before{
+    content: '';
+    width:100% ;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.5s;
+   }
+   header .link ul li a::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+    transition: 0.5s;
+   }
+   header .link ul li a::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    transition: 0.5s;
+   }
+   header .link ul li:hover::after,
+   header .link ul li:hover::before,
+   header .link ul li a:hover::after,
+   header .link ul li a:hover::before{
+    transform: scale(1.3);
+   }
+
+  
+   /*Header Ends*/
+/*Home Page Ends*/
